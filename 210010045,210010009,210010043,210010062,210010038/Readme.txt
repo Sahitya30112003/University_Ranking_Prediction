@@ -1,4 +1,4 @@
-                   						UNIVERSITY RANKING PREDICTOR
+                   				       UNIVERSITY RANKING PREDICTOR
 		   					=========================
 
 
@@ -35,18 +35,6 @@ FEATURES :
   9.After redirecting to the "Rank predictor" webpage,the user can choose "The Name of University" .Now the data related to that particular university is displayed.
  10.If a user wants data related only to a specific citerion,he can choose the the "criterion" from the "SELECT THE CRITERION" select box.When the user chooses a criterion,analysis is provided in both graphical and tablular format.
 
-
-AUTHORS :
-~~~~~~~~
- 
-This website is designed by students of undergradute from IITDH,
-
-   GROUP MEMBERS :
-    *SAHITYA CHINTA
-    *REVANTH PALAPARTHI
-    *PUSHPA PARVATHI BATTINA
-    *HAMSINI PILLI
-    *SAKEENA SADHIKA DODDA
 
 
 
