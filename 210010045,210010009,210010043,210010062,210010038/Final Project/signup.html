@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 7px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+span.psw {
+  float: right;
+  padding-top: 10px;
+}
+/* Extra styles for the cancel button */
+.backbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+/* Float cancel and signup buttons and add an equal width */
+.backbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 15px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 1% auto 1% auto; /* 1% from the top, 1% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom:5px;
+}
+ 
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .backbtn, .signupbtn {
+     width: 100%;
+  }
+}
+@viewport {
+width: device-width;
+zoom: 1.1;
+min-zoom: 0.4;
+max-zoom: 2;
+user-zoom: fixed;
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+</style>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body
+{
+	background: url("page.jpg") no-repeat center center fixed;
+    background-size: cover;
+ overflow: hidden; /* Hide scrollbars */
+}
+</style>
+</head>
+<body>
+  <form class="modal-content" action="process-signup.php" method="post" id="signup" novalidate>
+    <div class="container">
+      <h2>Sign Up</h2>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+        <div>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" id="name" name="name" required>
+        </div>
+        
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="password" name="password" required>
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" id="password_confirmation" name="password_confirmation" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      <div class="clearfix">
+        <button type="button" value="Back" onclick="window.history.back().style.display='none'" class="backbtn">Back</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+        <p class="form__text">
+                <a class="form__link" href="login.php" id="linkLogin">Already have an account? Login</a>
+        </p>
+      </div>
+    </div>
+  </form>
+</body>

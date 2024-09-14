@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body
+{
+background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+overflow:hidden;
+}
+.image1 {
+ border-radius: 90%;
+ border:5px solid red;
+    position: relative;
+    top:160px ;
+    left: 12%;
+  float: left;
+  width: 33%;
+  padding: 10px;
+padding-top:20px;
+padding-bottom:20px;
+}
+.image2 {
+ border-radius: 90%;
+ border:5px solid red;
+    position: relative;
+    top:160px ;
+    left: 16%;
+  float: left;
+  width: 33%;
+  padding: 0px;
+padding-top:20px;
+padding-bottom:20px;
+padding-right:0px;
+}
+    
+.image1:hover:after,.image2:hover:after {   
+    position: absolute;
+    content: attr(title);
+    display: inline-block;
+    left: 0px;
+    top: 0px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#center{
+text-align:center;
+}
+</style>
+</head>
+<body>
+<h1 align="center">Click on any of the below hyperlinks to proceed further</h1>
+<div id="center">
+<div class="row">
+<div class="image1" title="Click this to view the rankings for 5 years.">
+    <a href="Book4.htm"><img src="rankings.jpg" class="center"></a>
+</div>
+<div class="image2" title="Click this to go to our Rank predictor.">
+    <a href="https://sahitya30112003-ssl-project-app-3byjc7.streamlit.app/"><img align="center" src="strememlit.jpg"></a>
+</div> 
+</div>
+</div>   
+</body>
+</html>
